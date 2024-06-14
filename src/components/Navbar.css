@@ -1,0 +1,85 @@
+/* Header  */
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem 9%;
+  display: flex;
+  background-color: #774ea7;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.header .logo i{
+  color: #fff;
+  padding-right: .5rem ;
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+  color: #4e3b63;
+}
+.header .icons i{
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: #fff;
+}
+.header .icons i:hover{
+  color: #4e3b63;
+}
+
+#menu-btn{
+  display: none;
+}
+
+@media(max-width:991px){
+  html{
+    font-size: 55%;
+  }
+  .header{
+    padding: 2rem;
+  }
+  section{
+    padding: 3rem 2rem 0 0rem;
+  }
+}
+@media (max-width:768px){
+
+  .navbar{
+    display: none;
+  }
+}
+.landing .content{
+  margin: 30px 0px
+  
+  
+  
+  ;
+}
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+  .home .container.landing .content h3{
+    font-size: 50%;
+    
+  }
+
+}
+

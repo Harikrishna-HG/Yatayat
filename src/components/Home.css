@@ -1,0 +1,53 @@
+.home{
+  padding-top: 8rem;
+  background-color: #a586c9;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.home .container .landing{
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home .container .landing{
+  display: flex;
+}
+.home .container .landing .content span{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.home .container .landing .content h3{
+  font-size: 4rem;
+  color: #eee;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+.btn{
+  margin-top: 0.8rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  background:#eee;
+  color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background:#4e3b63;
+}
+.home .container .landing .image img {
+  width: 100%;
+  padding:24px 94px;
+}
+
+/* @media (min-width:768px) {
+  .image {
+    width: 600px;
+    height: 200px;
+  }
+} */
+@media (max-width:576px) {
+  .image img{
+    display: none;
+  }
+}

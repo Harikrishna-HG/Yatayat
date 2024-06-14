@@ -1,0 +1,137 @@
+
+/* About  */
+
+
+
+.services{
+  background-color: #a586c9;
+  text-align: center;
+  padding: 0px 4px;
+}
+
+.services-box{
+  padding: 40px 30px;
+  display:flex;
+  color: #fff;
+}
+
+.services h2{
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.services-box .box{
+  background: #fff;
+  color: #000;
+  width: 80%;
+  border-radius: 10px ;
+  padding: 20px 2px;
+  margin-left: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.services-box .box h3{
+  color: #774ea7;
+  font-size: 2rem;
+}
+.services-box .box p{
+  font-size: 1.5rem;
+}
+.services-box .box .btn{
+  border:2px solid #774ea7;
+  border-radius:5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .services-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+  }
+}
+@media screen and (max-width: 576px) {
+
+  .services-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+  }
+}
+
+/* Accordion Section */
+#accordion{
+  background-color: #774ea7;
+}
+
+
+section #accordion{
+  min-height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  font-size: 25px;  
+  margin:10px 0px;
+  text-align: center;
+  color: #fff;
+
+}
+.qn_answer{
+  padding-bottom: 50px;
+}
+.faq{
+  max-width: 100%;
+  margin:25px 40px;
+  padding-top: 10px;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  color: #fff;
+
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answer{
+  max-height:0;
+  overflow: hidden;
+  transition: max-height 1.0s ease;
+}
+.question h3{
+  font-size:18px;
+}
+.answer p{
+  line-height: 1.6;
+  font-size: 14px;
+}
+.faq.active .answer{
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+
+}
+.faq.active svg{
+  transform: rotate(180deg);
+}
+svg{
+  transition: transform 0.5s ease-in;
+}
+#accordion .faq:last-child{
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+}
+@keyframes fade{
+  from{
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
