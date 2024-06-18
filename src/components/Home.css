@@ -40,12 +40,7 @@
   padding:24px 94px;
 }
 
-/* @media (min-width:768px) {
-  .image {
-    width: 600px;
-    height: 200px;
-  }
-} */
+
 @media (max-width:576px) {
   .image img{
     display: none;
